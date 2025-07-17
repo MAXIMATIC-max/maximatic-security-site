@@ -4,26 +4,84 @@
   <meta charset="UTF-8" />
   <title>Services | Maximatic Security</title>
   <style>
-    body { font-family: Arial, sans-serif; background-color: #f0f0f0; padding: 20px; }
-    section { background: white; padding: 40px; max-width: 900px; margin: auto; }
-    ul { list-style: none; padding: 0; }
-    li::before { content: "✅ "; }
+    :root {
+      --primary-color: #0b1d60;
+      --accent-color: #005a9c;
+      --text-color: #333;
+      --bg-light: #f5f5f5;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--bg-light);
+      color: var(--text-color);
+      margin: 0;
+      padding: 20px;
+    }
+    .logo-container {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .logo {
+      max-width: 220px;
+      height: auto;
+    }
+    section {
+      background: white;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      border-radius: 10px;
+    }
+    h2 {
+      color: var(--primary-color);
+      text-align: center;
+    }
+    p.intro {
+      font-size: 1.1em;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li::before {
+      content: "🔒 ";
+      font-weight: bold;
+      color: var(--accent-color);
+    }
+    li {
+      margin-bottom: 12px;
+      font-size: 1.05em;
+    }
   </style>
 </head>
 <body>
 
+  <div class="logo-container">
+    <img src="logo.png" alt="Maximatic Logo" class="logo" />
+  </div>
+
   <section>
-    <h2>Our Services</h2>
+    <h2>Elite Protection Tailored to You</h2>
+    <p class="intro">
+      At Maximatic Security Services, we don’t offer one-size-fits-all safety we deliver personalized protection engineered for impact. Whether you're a high-profile executive, hosting a private event, managing commercial property, or simply prioritizing peace of mind, our services are designed to respond to your world’s unique demands. With a blend of tactical readiness, elite personnel, and state-of-the-art deployment, we provide security that doesn't just guard it empowers.
+    </p>
+
     <ul>
-      <li>Armed Security 24/7</li>
-      <li>Escorts</li>
-      <li>Executive Protection</li>
-      <li>Event Security</li>
-      <li>Armoured Vehicle Deployment</li>
-      <li>Private Investigation</li>
-      <li>K-9 Units</li>
-      <li>Residential/Commercial/Interior Surveillance</li>
-      <li>Armed Patrol</li>
+      <li>24/7 Armed Security Presence</li>
+      <li>Executive and VIP Protection Services</li>
+      <li>Private Investigations with Confidential Reporting</li>
+      <li>Secure Escort Services for Assets and Individuals</li>
+      <li>Armoured Vehicle Deployment on Demand</li>
+      <li>K-9 Surveillance and Patrol Units</li>
+      <li>Residential</li> 
+      <li>Commercial</li>
+      <li>Interior</li>
+      <li>Monitoring</li>
+      <li>Rapid Armed Patrol Response Teams</li>
+      <li>Event Security and Guest Management</li>
     </ul>
   </section>
 
