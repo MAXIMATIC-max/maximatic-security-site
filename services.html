@@ -3,35 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <title>Services | Maximatic Security</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     :root {
-      --primary-color: #0b1d60;
+      --primary-color: #0b1d60;  /* Deep Royal Blue */
       --accent-color: #005a9c;
       --text-color: #333;
       --bg-light: #f5f5f5;
     }
     body {
+      margin: 0;
       font-family: 'Segoe UI', Arial, sans-serif;
       background: var(--bg-light);
       color: var(--text-color);
-      margin: 0;
-      padding: 20px;
     }
-    .logo-container {
+    header {
+      background: var(--primary-color);
+      color: white;
       text-align: center;
-      margin-bottom: 30px;
+      padding: 30px 20px;
     }
     .logo {
       max-width: 220px;
       height: auto;
+      margin-bottom: 10px;
+    }
+    nav {
+      background: var(--accent-color);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 12px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      font-size: 1.05em;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #cdddfc;
     }
     section {
       background: white;
       padding: 40px 20px;
       max-width: 900px;
-      margin: auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin: 30px auto;
       border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.06);
     }
     h2 {
       color: var(--primary-color);
@@ -47,7 +68,7 @@
       padding: 0;
     }
     li::before {
-      content: "🔒 ";
+      content: "✅ ";
       font-weight: bold;
       color: var(--accent-color);
     }
@@ -55,18 +76,34 @@
       margin-bottom: 12px;
       font-size: 1.05em;
     }
+    footer {
+      background: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
   </style>
 </head>
 <body>
 
-  <div class="logo-container">
+  <header>
     <img src="logo.png" alt="Maximatic Logo" class="logo" />
-  </div>
+    <h1>MAXIMATIC SECURITY SERVICES</h1>
+    <p>Elite Services. Trusted Protection. True Peace of Mind.</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
   <section>
     <h2>Elite Protection Tailored to You</h2>
     <p class="intro">
-      At Maximatic Security Services, we don’t offer one-size-fits-all safety we deliver personalized protection engineered for impact. Whether you're a high-profile executive, hosting a private event, managing commercial property, or simply prioritizing peace of mind, our services are designed to respond to your world’s unique demands. With a blend of tactical readiness, elite personnel, and state-of-the-art deployment, we provide security that doesn't just guard it empowers.
+      At Maximatic Security Services, our reputation is built on readiness and discretion. Every service we offer is more than a response—it's a strategy. Whether you're a distinguished individual, a public figure, or a business leader, we design protection that reflects your stature and requirements. We go beyond simple deterrence; we deliver intelligent, tactical security that inspires absolute confidence.
     </p>
 
     <ul>
@@ -76,14 +113,15 @@
       <li>Secure Escort Services for Assets and Individuals</li>
       <li>Armoured Vehicle Deployment on Demand</li>
       <li>K-9 Surveillance and Patrol Units</li>
-      <li>Residential</li> 
-      <li>Commercial</li>
-      <li>Interior</li>
-      <li>Monitoring</li>
+      <li>Residential, Commercial & Interior Monitoring</li>
       <li>Rapid Armed Patrol Response Teams</li>
       <li>Event Security and Guest Management</li>
     </ul>
   </section>
+
+  <footer>
+    <p>&copy; 2025 Maximatic Security Services | Precision. Integrity. Vigilance.</p>
+  </footer>
 
 </body>
 </html>
